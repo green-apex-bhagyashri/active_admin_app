@@ -1,0 +1,128 @@
+@import 'activeadmin_addons/all';
+// Sass variable overrides must be declared before loading up Active Admin's styles.
+//
+// To view the variables that Active Admin provides, take a look at
+// `app/assets/stylesheets/active_admin/mixins/_variables.scss` in the
+// Active Admin source.
+//
+// For example, to change the sidebar width:
+// $sidebar-width: 242px;
+
+// Active Admin's got SASS!
+@import "active_admin/mixins";
+
+@import "arctic_admin/base";
+
+@import 'activeadmin/quill_editor/quill.snow';
+@import 'activeadmin/quill_editor_input';
+// Overriding any non-variable Sass must be done after the fact.
+// For example, to change the default status-tag color:
+//
+//   .status_tag { background: #6090DB; }
+
+
+#tabs, #utility_nav {
+	background-color: #2f5783   !important;
+}
+.header .site_title{
+	background-color: #28619f  !important;
+	color: white;
+}
+#tabs li {
+    width: 100%;
+    font-size: 16px !important;
+    line-height: 38px;
+    cursor: pointer;
+    font-weight: bold !important;
+}
+.header #tabs li a {
+ 	color: white;
+ }
+.header #tabs li.current a {
+    color: #252626 !important; 
+    font-size: 16px !important;
+    font-weight: bold !important;
+    background-color: white;
+}
+#title_bar #titlebar_right .action_item a {
+	background-color: #335aa1  !important;
+}
+thead th, thead th a{
+	background-color: #28619f  !important;
+	font-size: 14px;
+	font-weight: 800;
+	color: white;
+}
+.view_link{
+	background-color: green !important;
+}
+.delete_link{
+	background-color: #d53d59 !important;
+}
+.edit_link{
+	background-color: #335aa1 !important;
+}
+.odd{
+	background-color: #e4eaec54 !important;
+}
+thead th{
+	padding-left: 7px; 
+}
+.panel h3{
+    color: #324b87f2;
+    font-weight: bold;
+    font-family: fantasy;
+    font-size: 30px;
+}
+.panel_contents th {
+    color: black;
+    text-align: left;
+    padding: 8px;
+    width: 15% !important;
+    font-weight: bold;
+    font-size: 18px;
+}
+tbody tr td {
+    padding: 4px;
+    vertical-align: middle;
+    color: #323537;
+    font-size: 15px;
+}
+#login{
+    border-top: 3px solid #335aa1;
+}
+
+#login input[type="submit"]{
+    background-color: #335aa1 !important;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+#login h2{
+    color: #335aa1;
+}
+#active_admin_content form .actions .action input[type="submit"]{
+    background-color: #335aa1;
+}
+.panel_contents th {
+    color: black;
+    text-align: left;
+    padding: 17px;
+    width: 7%;
+    font-weight: bold;
+    font-size: 18px;
+    vertical-align: top;
+    color: #324b87f2;
+}
+.head h1{
+    font-family: serif;
+    text-transform: capitalize;
+}
+ h2{
+    color: #3c589b !important;
+}
+
+body.active_admin [data-aa-quill-editor] {
+    display: block; 
+    width: calc(100% - 2px); 
+}
